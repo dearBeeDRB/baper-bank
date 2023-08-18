@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Baap Er Bank</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body class="w-full bg-[#a8dadc]">
+    <header class="pt-12 mb-[50px] container mx-auto">
+        <h1 class="text-5xl px-1 md:p-0 text-center font-semibold">Let's Get Some <span
+                class="text-[#e63946]">Moneeey</span></h1>
+    </header>
+    <main>
+        <section class="mb-14">
+            <div class="grid grid-cols-1 md:grid-cols-3 w-3/4 gap-5 mx-auto">
+                <div class="bg-[#457b9d] text-white py-8 pl-5 rounded-xl">
+                    <h4 class="text-2xl">Deposit</h4>
+                    <p class="text-6xl">$<span id="deposited">00</span></p>
+                </div>
+                <div class="bg-[#1d3557] text-white py-8 pl-5 rounded-xl">
+                    <h4 class="text-2xl">Withdraw</h4>
+                    <p class="text-6xl">$<span id="withdrawn">00</span></p>
+                </div>
+                <div class="bg-[#457b9d] text-white py-8 pl-5 rounded-xl">
+                    <h4 class="text-2xl">Balance</h4>
+                    <p class="text-6xl">$<span id="total">1235</span></p>
+                </div>
+            </div>
+        </section>
+
+        <section>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-5 w-3/4 mx-auto">
+                <div class="bg-[#f1faee] rounded-xl py-8 pl-5">
+                    <h4 class="text-3xl mb-4">Please Deposit</h4>
+                    <input type="number" class="w-[90%] md:w-3/4 rounded-xl mb-4 pl-1 md:pl-4 py-2" name="" id="deposit-amount" placeholder="$ amount you want to deposit">
+                    <br>
+                    <button id="btn-deposit" class="bg-[#1d3557] text-white py-3 px-5 rounded-xl hover:bg-[#457b9d]">Deposit</button>
+                </div>
+                <div class="bg-[#e63946] rounded-xl py-8 pl-5">
+                    <h4 class="text-3xl mb-4 text-white">Please Withdraw</h4>
+                    <input type="number" class="w-[90%] md:w-3/4 mb-4 pl-1 md:pl-4 rounded-xl py-2" name="" id="withdraw-amount" placeholder="$ amount you want to withdraw">
+                    <br>
+                    <button id="btn-withdraw" class="bg-[#1d3557] py-3 text-white px-5 rounded-xl hover:bg-[#457b9d]">Withdraw</button>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+
+    </footer>
+
+    <script src="./bank.js"></script>
+</body>
+
+</html>
